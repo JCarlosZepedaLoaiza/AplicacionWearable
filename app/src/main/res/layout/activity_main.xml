@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_boxedEdges="all"
+        android:background="@android:color/holo_red_light"
+        >
+
+        <TextView
+            android:id="@+id/txtTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10sp"
+            android:text="Apis"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnpelis"
+            android:layout_width="94dp"
+            android:layout_height="35dp"
+            android:background="#8A703939"
+            android:backgroundTint="#83000000"
+            android:onClick="btn1"
+            android:text="Peliculas"
+            android:textColor="#FDFDFD"
+            android:typeface="sans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.986" />
+
+        <Button
+            android:id="@+id/btnsport"
+            android:layout_width="95dp"
+            android:layout_height="36dp"
+            android:background="#8A703939"
+            android:backgroundTint="#83000000"
+            android:backgroundTintMode="multiply"
+            android:onClick="btn2"
+            android:text="Juegos"
+            android:typeface="sans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:drawableBottom="@android:drawable/ic_menu_revert"
+            android:onClick="btn3"
+            android:text="R"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.wear.widget.BoxInsetLayout>
